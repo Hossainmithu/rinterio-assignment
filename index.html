@@ -4,8 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riterio Website</title>
+  <!-- goggle font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    font-family {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
-<body>
-  
+<body class="font-family mx-w-[1440px] m-auto">
+  <header>
+    <!-- nav section -->
+    <div class="navbar bg-base-100 w-[95%] lg:w-4/5 m-auto">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content text-[#737373] bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a class="text-[#494949]">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <i class="fa-solid fa-arrow-up rotate-45"></i>
+          <a class="text-xl">Rinterio</a>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end hidden lg:flex gap-4">
+        <div class="bg-white"><i class="fa-solid  fa-magnifying-glass"></i></div>
+        <i class="fa-solid bg-white fa-cart-shopping"></i>
+        <div class="px-3 py-1 bg-[#ABEF5F] rounded-3xl">
+          <a class="text-[#1C1C1C] text-xl font-medium">Book Consult</a>
+          <i class="fa-solid fa-arrow-up rotate-45"></i>
+        </div>
+      </div>
+    </div>
+    <!-- banner section -->
+    <section>
+      <div class="card card-compact bg-base-100 w-[95%] lg:w-4/5 m-auto">
+        <figure>
+          <img src="assets/banner.png" alt="">
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-[#212121] text-center font-bold text-3xl lg:text-6xl">A barn house of this design
+            has a striking appearance</h2>
+          <p class="text-[#494949] font-medium text-center py-3">The barn house captivates with its blend of rustic
+            charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood
+            the space with natural light.</p>
+          <div class="card-actions justify-center ">
+            <button class="btn rounded-3xl hover:bg-[#ABEF5F] bg-[#ABEF5F]">View Details <i
+                class="fa-solid fa-arrow-up rotate-45"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- we design section -->
+    <section>
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content w-[95%] lg:w-4/5 relative flex-col-reverse lg:flex-row-reverse">
+          <img src="assets/Rectangle.png" class="max-w-sm lg:max-w-xl max-h-2xl rounded-lg" />
+          <div>
+            <div class="absolute hidden lg:block -left-6">
+              <img src="assets/Vector.png" alt="">
+            </div>
+            <br>
+            <br>
+            <button class="bg-white rounded-lg px-4 my-4"> <i
+              class="fa-solid fa-arrow-right"></i> About us</button>
+            <h1 class="text-4xl lg:text-5xl text-center lg:text-left font-extrabold text-[#212121]">We design thoughtful, liveable spaces</h1>
+            <p class="py-6 font-medium text-base text-center lg:text-left lg:text-[16px] text-[#494949]">The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <div class="mb-6">
+              <div class="flex flex-row justify-center items-center pl-4 bg-base-100">
+                <figure>
+                  <img src="assets/commercial.png" alt="">
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title text-[#494949] font-bold text-xl">Commercial</h2>
+                  <p class="text-[#737373] ">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-row justify-center items-center pl-4 bg-base-100">
+                <figure>
+                  <img src="assets/residential.png" alt="">
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title text-[#494949] font-bold text-xl">Residential</h2>
+                  <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
